@@ -1237,7 +1237,7 @@ class opMenu extends opPluginBase {
             $tree[] = array($v, $this->generateSpaces($spaces));
             foreach ($menuArr as $vC) {
                 if ($vC['parent'] == $v['id']) {
-                    $this->generateTree($menuArr, $v['id'], $spaces+4, &$tree);
+                    $this->generateTree($menuArr, $v['id'], $spaces+4, $tree);
                     break;
                 }
             }

@@ -71,8 +71,8 @@ class controller_index extends opControllerBase {
                 $controllerOwner = $this->vc->getPluginID($this->route[0]);
                 $controllerName  = opPlugin::getNameById($controllerOwner);
                 if ($controllerName) {
-                    $c = call_user_func_array(array($controllerName, 'controller'), $this->url);
-                    $pluginPageTitle = call_user_func_array(array($controllerName, 'getPageTitle'), $this->url);
+                    $c = call_user_func_array(array($controllerName, 'controller'), array($this->url));
+                    $pluginPageTitle = call_user_func_array(array($controllerName, 'getPageTitle'), array($this->url));
                     $pluginPageTitle = (is_array($pluginPageTitle)) ? $pluginPageTitle : array('Plugin pagetitle error');
                     switch ($c) {
                         case false:

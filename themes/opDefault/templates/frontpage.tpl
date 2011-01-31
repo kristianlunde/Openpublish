@@ -9,16 +9,14 @@
     </div><!--END header-->
 
     <div id="banner">
-        <div class="slideLeft"><img src="{themePath}images/banner_slide_left.png" width="40" height="40" alt="" /></div>
-        <div class="slideRight"><img src="{themePath}images/banner_slide_right.png" width="40" height="40" alt="" /></div>
-        <div class="slides">
-            {2:slides:700x300}
+
+            {2:slides:700x600}
             {2:wrapStart}
             <div class="slide">
                 {2:wrapContent}
             </div>
             {2:wrapEnd}
-        </div><!--END slides-->
+
     </div><!--END banner-->
 
     <div id="content">

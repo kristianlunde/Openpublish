@@ -523,7 +523,7 @@ class opLayout extends opPluginBase {
             # Temporary fix to get around a 500 internal server error when fileLocator is empty
             $obj = new ReflectionClass($p['plugin_name']);
 
-            if (call_user_func_array(array($p['plugin_name'], 'isLayoutAssigned'), $layoutID)) {
+            if (call_user_func_array(array($p['plugin_name'], 'isLayoutAssigned'), array($layoutID))) {
                 $pluginArr[$p['id']] = $p['plugin_name'];
             }
         }

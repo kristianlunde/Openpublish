@@ -31,5 +31,6 @@
         <file src="js/jquery.a-tools-1.2.min.js" ddm="false" />
         <file src="js/jquery.textarea.js" ddm="false" />
         <file src="js/jquery.uniform.js" ddm="false" />
+        <file src="js/jquery.plugin.timepicker.js" ddm="false" />
     </js>
 </theme>
